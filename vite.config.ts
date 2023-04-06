@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         pip: resolve(root, 'pip', 'index.html'),
         example: resolve(root, 'example', 'index.html'),
+        index: resolve(root, 'index.html'),
       },
     },
   },
