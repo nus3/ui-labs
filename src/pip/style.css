@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+.player {
+  background-color: beige;
+  color: brown;
+  font-weight: bold;
+  font-size: 2rem;
+}
