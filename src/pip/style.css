@@ -1,7 +1,9 @@
 :root {
   --primary-color: hsl(160 55% 55%);
   --primary-color-opacity: hsl(160 55% 55% / 0.6);
+  --primary-color-disabled: hsl(160 34% 22%);
   --primary-color-hover-opacity: hsl(160 55% 55% / 0.8);
+  --secondary-color: hsl(42 100% 70%);
   --secondary-color: hsl(42 100% 70%);
   --bg-color: hsl(216 18% 16%);
   --bg-color-opacity: hsl(216 18% 16% / 0.4);
@@ -35,6 +37,12 @@ button {
 
 button:hover {
   background-color: var(--primary-color-hover-opacity);
+}
+
+button:disabled {
+  cursor: auto;
+  background-color: var(--primary-color-disabled);
+  color: gray;
 }
 
 footer {
