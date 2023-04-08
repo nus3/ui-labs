@@ -10,18 +10,25 @@
     <title>Picture-in-Picture | nus3 UI Labs</title>
   </head>
   <body class="body">
-    <h1>Picture-in-Picture Playground</h1>
-    <button id="pipButton">Open</button>
-    <div id="pipContainer">
-      <div id="timerWrapper" class="timer-wrapper" style="display: none">
-        <span id="time">00:00:00</span>
-        <div class="btn-wrapper">
-          <button id="start" type="button">start</button>
-          <button id="stop" type="button">stop</button>
-          <button id="reset" type="button">reset</button>
+    <header>
+      <h1>Picture-in-Picture Playground</h1>
+    </header>
+    <main>
+      <button id="pipButton">Open</button>
+      <div id="pipContainer">
+        <div id="timerWrapper" class="timer-wrapper" style="display: none">
+          <span id="time" class="time">00:00:00.000</span>
+          <div class="btn-wrapper">
+            <button id="start" type="button">start</button>
+            <button id="stop" type="button">stop</button>
+            <button id="reset" type="button">reset</button>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <a href="/">TOP</a>
+    </footer>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>
