@@ -3,13 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="origin-trial"
+      content="Al9XL5bG7RJsgKYDMI5LFRDFi7LgiR66lYGoi6wXa3aR02WfWFhZeSjbOo/toXtVdbjJna+fRggL/IYgSoC+IgIAAABjeyJvcmlnaW4iOiJodHRwczovL251czMuZ2l0aHViLmlvOjQ0MyIsImZlYXR1cmUiOiJEb2N1bWVudFBpY3R1cmVJblBpY3R1cmVBUEkiLCJleHBpcnkiOjE2OTQxMzExOTl9"
+    />
     <title>Picture-in-Picture | nus3 UI Labs</title>
-    <script type="module" crossorigin src="/ui-labs/assets/pip-1307f801.js"></script>
+    <script type="module" crossorigin src="/ui-labs/assets/pip-475fb510.js"></script>
     <link rel="modulepreload" crossorigin href="/ui-labs/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/ui-labs/assets/index-3404e4dc.css">
   </head>
-  <body>
-    <h1>Picture-in-Picture Playground</h1>
-    <div id="app"></div>
+  <body class="body">
+    <header>
+      <h1>Picture-in-Picture Playground</h1>
+    </header>
+    <main>
+      <button id="pipButton">Open</button>
+      <div id="pipContainer">
+        <div id="timerWrapper" class="timer-wrapper" style="display: none">
+          <span id="time" class="time">00:00:00.000</span>
+          <div class="btn-wrapper">
+            <button id="start" type="button">start</button>
+            <button id="stop" type="button">stop</button>
+            <button id="reset" type="button">reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="/">TOP</a>
+    </footer>
     
   </body>
 </html>
