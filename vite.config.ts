@@ -12,6 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         pip: resolve(root, 'pip', 'index.html'),
+        viewTransitionsAPI: resolve(root, 'view-transitions-api', 'index.html'),
         index: resolve(root, 'index.html'),
       },
     },
