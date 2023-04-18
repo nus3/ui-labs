@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         pip: resolve(root, 'pip', 'index.html'),
         viewTransitionsAPI: resolve(root, 'view-transitions-api', 'index.html'),
+        opfs: resolve(root, 'opfs', 'index.html'),
         index: resolve(root, 'index.html'),
       },
     },
