@@ -1,14 +1,22 @@
 import './style.css'
-import { createList, list, registerEvent } from './main-thread'
+import { createList, list, registerEvent, getValues } from './main-thread'
 
 const main = async () => {
   const entries = await list()
   const ul = createList(entries)
   document.querySelector('#mListWrapper')?.appendChild(ul)
-
   registerEvent()
 
-  // TODO: webworkerを使って同期的にファイル操作する
+  document.querySelector('#webWorker')?.addEventListener('click', () => {
+    const worker = new Worker('worker.js')
+    worker.onmessage = (e) => {
+      alert(e.data)
+    }
+
+    worker.postMessage(getValues())
+  })
+
+  // TODO: opgsのファイルをコピーしてダウンロードできるように
 }
 
 main()

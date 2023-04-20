@@ -114,7 +114,6 @@ const createList = (entries) => {
 const list = async () => {
   const opfsRoot = await navigator.storage.getDirectory()
   const entries = await getDirectoryEntriesRecursive(opfsRoot)
-  console.info(entries)
   return entries
 }
 
@@ -179,7 +178,8 @@ const registerEvent = () => {
 
   const mList = document.querySelector('#mList')
   mList.addEventListener('click', () => {
-    list()
+    const l = list()
+    console.info(l)
   })
 
   const reset = document.querySelector('#reset')
@@ -208,4 +208,5 @@ export {
   resolvePath,
   list,
   registerEvent,
+  getValues,
 }
