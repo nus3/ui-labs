@@ -1,0 +1,2 @@
+(function(){"use strict";onmessage=async c=>{const{fileName:a,text:n}=c.data;if(!a||!n){postMessage("File name or Text is empty!");return}const e=await(await(await navigator.storage.getDirectory()).getFileHandle(a,{create:!0})).createSyncAccessHandle(),s=new TextEncoder,i=new TextDecoder;let t;t=e.getSize();const r=s.encode(`${n}
+`);e.write(r,{at:t}),e.flush(),t=e.getSize();const o=new DataView(new ArrayBuffer(t));e.read(o,{at:0}),console.log(i.decode(o)),e.close()}})();
