@@ -4,6 +4,7 @@
   --primary-color-opacity-low: hsl(160 55% 55% / 0.2);
   --primary-color-hover-opacity: hsl(160 55% 55% / 0.8);
   --secondary-color: hsl(42 100% 70%);
+  --secondary-color-opacity-low: hsl(42 100% 70% / 0.2);
   --secondary-color-opacity: hsl(42 100% 70% / 0.2);
   --bg-color: hsl(216 18% 16%);
   --bg-color-opacity: hsl(216 18% 16% / 0.4);
@@ -14,8 +15,8 @@
 
 body {
   margin: 0;
+  margin-bottom: 200px;
   background-color: var(--bg-color);
-  margin: 0;
   color: var(--text-color);
   padding: 2rem;
 }
@@ -66,7 +67,31 @@ a {
   font-size: 1.4rem;
 }
 
-.btn-wrapper {
+label {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+input {
+  height: 28px;
+  background-color: var(--secondary-color-opacity-low);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.btn-wrappr {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;

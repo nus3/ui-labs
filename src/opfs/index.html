@@ -10,6 +10,20 @@
       <h1>Origin private file system Playground</h1>
     </header>
     <main>
+      <form id="form" class="form">
+        <label>
+          File name
+          <input name="fileName" type="text" />
+        </label>
+        <label>
+          Directory name
+          <input name="dirName" type="text" />
+        </label>
+        <label>
+          Text
+          <input name="text" type="text" />
+        </label>
+      </form>
       <section>
         <h2>Main thread</h2>
         <div class="btn-wrapper">
@@ -29,6 +43,10 @@
       </section>
       <section>
         <h2>OPFS Directory</h2>
+        <div style="margin-bottom: 18px">
+          <button id="reload">Reload</button>
+          <button id="reset">Reset OPFS</button>
+        </div>
         <div id="mListWrapper" class="m-list-wrapper"></div>
       </section>
     </main>
