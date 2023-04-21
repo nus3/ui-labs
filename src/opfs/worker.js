@@ -21,7 +21,7 @@ onmessage = async (e) => {
   size = accessHandle.getSize()
   const dataView = new DataView(new ArrayBuffer(size))
   accessHandle.read(dataView, { at: 0 })
-  console.log(textDecoder.decode(dataView))
+  console.info(textDecoder.decode(dataView))
 
   accessHandle.close()
 }

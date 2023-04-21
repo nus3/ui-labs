@@ -27,7 +27,7 @@ const createDir = async (dirName) => {
 const read = async (fileName) => {
   const fileHandle = await getFileHandle(fileName)
   const file = await fileHandle.getFile()
-  console.log(await file.text())
+  console.info(await file.text())
 }
 
 const write = async (fileName, text) => {

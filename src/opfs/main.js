@@ -17,7 +17,7 @@ const main = async () => {
     worker.postMessage(getValues())
   })
 
-  // TODO: opgsのファイルをコピーしてダウンロードできるように
+  // opfsのファイルをコピーしてダウンロードできるように
 }
 
 main()
