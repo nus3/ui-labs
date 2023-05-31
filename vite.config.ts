@@ -15,6 +15,7 @@ export default defineConfig({
         viewTransitionsAPI: resolve(root, 'view-transitions-api', 'index.html'),
         opfs: resolve(root, 'opfs', 'index.html'),
         index: resolve(root, 'index.html'),
+        anchorPosition: resolve(root, 'anchor-position', 'index.html'),
       },
     },
   },
