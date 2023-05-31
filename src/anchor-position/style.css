@@ -38,7 +38,6 @@ ul > li:last-child {
 
 
 button {
-  border-radius: 0.25rem;
   border-width: 1px;
   border-style: solid;
   border-color: var(--primary-color);
@@ -63,4 +62,80 @@ footer {
 a {
   color: var(--secondary-color);
   font-size: 1.4rem;
+}
+
+.tooltip {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color-opacity);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.bottom {
+  position: absolute;
+  top: 2000px;
+}
+
+.section1 {
+  padding-top: 50px;
+  padding-left: 300px;
+}
+
+@position-fallback --bottom-to-top {
+  @try {
+    top: anchor(bottom);
+    left: anchor(center);
+  }
+
+  @try {
+    bottom: anchor(top);
+    left: anchor(center);
+  }
+}
+
+.anchor1 {
+  anchor-name: --anchor1
+}
+
+.tooltip1 {
+  width: anchor-size(--anchor1 width);
+  height: 60px;
+  position-fallback: --bottom-to-top;
+  translate: -50% 0;
+}
+
+.tooltip1:popover-open {
+  display: grid;
+  place-items: center;
+}
+
+.section2 {
+  padding-left: 300px;
+  margin-top: 100px;
+}
+
+@position-fallback --right-to-left {
+  @try {
+    left: anchor(right);
+  }
+
+  @try {
+    right: anchor(left);
+  }
+}
+
+.anchor2 {
+  anchor-name: --anchor2
+}
+
+.tooltip2 {
+  width: 150px;
+  height: anchor-size(--anchor2 height);
+  top: anchor(top);
+  position-fallback: --right-to-left;
+}
+
+.tooltip2:popover-open {
+  display: grid;
+  place-items: center;
 }

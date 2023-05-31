@@ -9,7 +9,27 @@
     <header>
       <h1>CSS Anchor positioning</h1>
     </header>
-    <main>hello</main>
+    <main>
+      <section class="section1">
+        <button id="anchor1" class="anchor1" popovertarget="popover1">
+          Open Tooltip1
+        </button>
+        <div id="popover1" class="tooltip tooltip1" popover anchor="anchor1">
+          Tooltip1
+        </div>
+      </section>
+
+      <section class="section2">
+        <button id="anchor2" class="anchor2" popovertarget="popover2">
+          Open Tooltip2
+        </button>
+        <div id="popover2" class="tooltip tooltip2" popover anchor="anchor2">
+          Tooltip2
+        </div>
+      </section>
+
+      <div class="bottom">bottom</div>
+    </main>
     <footer>
       <a href="../">TOP</a>
     </footer>
