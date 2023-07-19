@@ -81,10 +81,10 @@ a {
 }
 
 @keyframes grow-progress {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  100% {
     width: 100%;
   }
 }
@@ -99,7 +99,7 @@ a {
   border-radius: 4px;
   box-sizing: border-box;
   animation: grow-progress auto linear forwards;
-  animation-timeline: scroll(block root);
+  animation-timeline: scroll(root y);
 }
 
 .header {
