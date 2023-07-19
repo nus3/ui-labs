@@ -16,6 +16,7 @@ export default defineConfig({
         opfs: resolve(root, 'opfs', 'index.html'),
         index: resolve(root, 'index.html'),
         anchorPosition: resolve(root, 'anchor-position', 'index.html'),
+        scrollDriven: resolve(root, 'scroll-driven', 'index.html'),
       },
     },
   },
