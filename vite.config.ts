@@ -18,6 +18,7 @@ export default defineConfig({
         anchorPosition: resolve(root, 'anchor-position', 'index.html'),
         scrollDriven: resolve(root, 'scroll-driven', 'index.html'),
         schedulerYield: resolve(root, 'scheduler-yield', 'index.html'),
+        selectlist: resolve(root, 'selectlist', 'index.html'),
       },
     },
   },
