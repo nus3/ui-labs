@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selectlist | nus3 UI Labs</title>
+  </head>
+  <body>
+    <header>
+      <h1>selectlist</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Before</h2>
+        <select>
+          <option value="" hidden class="hidden">undefined</option>
+          <optgroup label="nus">
+            <option>nus1</option>
+            <option>nus2</option>
+            <option>nus3</option>
+            <option>nus4</option>
+          </optgroup>
+          <optgroup label="foo">
+            <option>foo1</option>
+            <option>foo2</option>
+            <option>foo3</option>
+            <option>foo4</option>
+          </optgroup>
+        </select>
+      </section>
+      <section>
+        <h2>After</h2>
+        <selectlist class="selectlist">
+          <button type="selectlist" class="selectlist-button">
+            Current Value:
+            <selectedoption></selectedoption>
+          </button>
+          <listbox class="listbox">
+            <option value="" hidden class="hidden">undefined</option>
+            <div>
+              <h3 class="option-category">nus</h3>
+              <div class="options">
+                <option>nus1</option>
+                <option>nus2</option>
+                <option>nus3</option>
+                <option>nus4</option>
+              </div>
+            </div>
+            <div>
+              <h3 class="option-category">foo</h3>
+              <div class="options">
+                <option>foo1</option>
+                <option>foo2</option>
+                <option>foo3</option>
+                <option>foo4</option>
+              </div>
+            </div>
+          </listbox>
+        </selectlist>
+      </section>
+    </main>
+    <footer>
+      <a href="../">TOP</a>
+    </footer>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
