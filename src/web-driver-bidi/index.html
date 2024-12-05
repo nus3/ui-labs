@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebDriver BiDi Client | nus3 UI Labs</title>
+  </head>
+  <body>
+    <header>
+      <h1>WebDriver BiDi Client</h1>
+    </header>
+    <main>
+      <section>
+        <h2 style="margin-bottom: 0">How to start</h2>
+        <div class="flow-section">
+          <ol>
+            <li>
+              Start Firefox with --remote-debugging-port
+              --remote-allow-origins=https://nus3.github.io
+            </li>
+            <li>
+              Input the URL of the Firefox remote debugging websocket
+              server(Default: localhost:9222)
+            </li>
+            <li>Click connect button</li>
+          </ol>
+          <ul>
+            <li>
+              <a
+                href="https://wiki.mozilla.org/Firefox/CommandLineOptions#Using_command_line_options"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                How to start Firefox in cli
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://firefox-source-docs.mozilla.org/remote/cdp/Usage.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Usage --remote-debugging-port
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="form" class="form">
+        <h2 style="margin: 0">Operate</h2>
+        <label>
+          URL
+          <input
+            name="url"
+            type="text"
+            autocomplete="off"
+            value="localhost:9222/session"
+          />
+          <button id="connect" type="button">connect</button>
+        </label>
+        <button id="navigate" type="button">navigate</button>
+      </section>
+    </main>
+    <section class="result-wrapper">
+      <h2 style="margin: 0">Traffic</h2>
+      <div id="result" class="result"></div>
+    </section>
+    <footer>
+      <a href="../">TOP</a>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
