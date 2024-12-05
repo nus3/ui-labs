@@ -3,6 +3,7 @@ import { EventEmitter } from "./event-emitter";
 
 let socket = null
 let requestId = 1
+// TODO: なんでeventEmitterを使ったら動くのか調べるところから
 const eventEmitter = new EventEmitter()
 
 function addLog(log) {
