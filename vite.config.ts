@@ -20,6 +20,7 @@ export default defineConfig({
         schedulerYield: resolve(root, 'scheduler-yield', 'index.html'),
         selectlist: resolve(root, 'selectlist', 'index.html'),
         webDriverBidi: resolve(root, 'web-driver-bidi', 'index.html'),
+        form: resolve(root, 'form', 'index.html'),
       },
     },
   },
